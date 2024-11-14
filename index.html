@@ -1,104 +1,120 @@
-/* styles/globals.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportSurge</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: #fff;
-}
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffcd00;
+    }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+    main {
+      padding: 40px;
+      text-align: center;
+    }
 
-.header {
-  background-color: #111;
-  padding: 20px;
-  text-align: center;
-}
+    h1 {
+      font-size: 3rem;
+    }
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffcd00;
-}
+    .matches {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.main-content {
-  padding: 40px;
-  flex-grow: 1;
-  text-align: center;
-}
+    .match-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
 
-.header-info h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
+    .match-title {
+      font-size: 1.5rem;
+      color: #ffcd00;
+    }
 
-.header-info p {
-  font-size: 1.2rem;
-  color: #bbb;
-}
+    .match-league {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
 
-.matches {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
+    .watch-link {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
 
-.match-card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
+    footer {
+      background-color: #111;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">SportSurge</div>
+  </header>
 
-.match-card:hover {
-  transform: scale(1.05);
-}
+  <!-- Main Content Section -->
+  <main>
+    <h1>Watch Live Sports Streams</h1>
+    <p>Enjoy sports from around the world</p>
 
-.match-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ffcd00;
-}
+    <!-- Matches Section -->
+    <div class="matches">
+      <div class="match-card">
+        <h2 class="match-title">Football Match 1</h2>
+        <p class="match-league">Premier League</p>
+        <a href="https://streaming-link-1" class="watch-link">Watch Now</a>
+      </div>
+      <div class="match-card">
+        <h2 class="match-title">Basketball Match 1</h2>
+        <p class="match-league">NBA</p>
+        <a href="https://streaming-link-2" class="watch-link">Watch Now</a>
+      </div>
+      <div class="match-card">
+        <h2 class="match-title">Tennis Match 1</h2>
+        <p class="match-league">Wimbledon</p>
+        <a href="https://streaming-link-3" class="watch-link">Watch Now</a>
+      </div>
+    </div>
+  </main>
 
-.match-league {
-  font-size: 1rem;
-  color: #bbb;
-  margin-bottom: 15px;
-}
+  <!-- Footer Section -->
+  <footer>
+    <p>© All rights reserved 2024 SportSurge</p>
+  </footer>
 
-.watch-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.watch-link:hover {
-  background-color: #218838;
-}
-
-.footer {
-  background-color: #111;
-  padding: 10px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #bbb;
-}
+  <!-- JavaScript Section -->
+  <script>
+    // JavaScript (Optional, can be used for any interactivity)
+    console.log("SportSurge website loaded successfully!");
+  </script>
+</body>
+</html>

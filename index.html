@@ -1,90 +1,104 @@
-// pages/index.js
+/* styles/globals.css */
 
-export default function Home() {
-  return (
-    <div style={styles.container}>
-      <header style={styles.header}>
-        <h1 style={styles.title}>Welcome to SportSurge</h1>
-      </header>
-
-      <main style={styles.main}>
-        <ul style={styles.streamLinks}>
-          <li><a style={styles.link} href="https://reddit.bestreamsports.lol/">Streameast Live</a></li>
-          <li><a style={styles.link} href="https://reddit.bestreamsports.lol/p/nbastreams.html">NBA Live HD</a></li>
-          <li><a style={styles.link} href="https://reddit.bestreamsports.lol/p/mmastreams.html">MMA Live HD</a></li>
-          <li><a style={styles.link} href="https://reddit.bestreamsports.lol/p/sportsurge.html">NCAAB Live HD</a></li>
-          <li><a style={styles.link} href="https://reddit.bestreamsports.lol/p/boxingstreams.html">Boxing Live HD</a></li>
-        </ul>
-      </main>
-
-      <footer style={styles.footer}>
-        <p>© All rights reserved 2024 SportSurge</p>
-      </footer>
-    </div>
-  )
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
-    fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#0f0f0f',
-    color: '#fff',
-    margin: 0,
-    padding: 0,
-  },
-  header: {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: '#1a1a1a',
-  },
-  title: {
-    fontSize: '2em',
-    color: '#ffcd00',
-    marginBottom: '10px',
-  },
-  main: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: '20px',
-    flexGrow: 1,
-  },
-  streamLinks: {
-    listStyle: 'none',
-    width: '100%',
-    maxWidth: '600px',
-    padding: 0,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '10px',
-  },
-  link: {
-    display: 'block',
-    backgroundColor: '#28a745',
-    color: 'black',
-    textDecoration: 'none',
-    textAlign: 'center',
-    padding: '15px',
-    borderRadius: '5px',
-    fontWeight: 'bold',
-    fontSize: '1.1em',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-    transition: 'background-color 0.3s',
-  },
-  footer: {
-    textAlign: 'center',
-    padding: '10px',
-    backgroundColor: '#1a1a1a',
-    color: '#bfbfbf',
-    fontStyle: 'italic',
-  },
-};
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
 
-// Hover effect using inline style (Next.js styled JSX or CSS modules can be used if needed for advanced styling)
-styles.link[':hover'] = {
-  backgroundColor: '#ffcd00',
-  color: '#000',
-};
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcd00;
+}
+
+.main-content {
+  padding: 40px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-info h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header-info p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.matches {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.match-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.match-card:hover {
+  transform: scale(1.05);
+}
+
+.match-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcd00;
+}
+
+.match-league {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.watch-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.watch-link:hover {
+  background-color: #218838;
+}
+
+.footer {
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbb;
+}
